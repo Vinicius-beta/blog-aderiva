@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Moon Light Parallax</title>
+</head>
+<body>
+  <section>
+    <img src="../image/ceu-estrelado.avif" id="bg">
+    <img src="../image/moon.png" id="moon">
+    <img src="../image/mountain.png" id= "mountain">
+    <img src="../image/road.png" id="road">
+    <h2 id="text">Moon Light</h2>
+</section>
+    <div class="resumo">
+      <h1>Explorando a Vida em um Motorhome. <br> Liberdade, Cultura e Conexão com a Natureza.</h1><br>
+
+    <p>Viver em um motorhome transcende a mera mudança de endereço; é uma experiência que redefiniu minha perspectiva de vida. Nesse modo de viver sobre rodas, encontrei não apenas um abrigo móvel, mas um portal para a liberdade, a cultura e uma conexão mais profunda com a natureza.
+</p><br>
+    <p>A liberdade que um motorhome proporciona é verdadeiramente transformadora. A estrada se estende à nossa frente, um convite para explorar novos horizontes a cada amanhecer. Não há horários fixos ou itinerários rígidos; o caminho é nosso para moldar, permitindo-nos absorver o melhor de cada lugar, sem a pressa que a vida cotidiana muitas vezes impõe.
+</p><br>
+    <p>A riqueza cultural que se desdobra ao longo dessa jornada é uma dádiva. Cada parada é uma nova oportunidade de imergir em tradições locais, sabores autênticos e histórias compartilhadas ao redor de fogueiras. A diversidade de experiências culturais molda um mosaico enriquecedor de vivências que não poderia ser replicado de outra forma. Em um motorhome, o mundo se torna a sala de estar, e cada comunidade visitada é uma extensão acolhedora dessa morada itinerante.
+</p><br>
+    <p>As amizades florescem em cada acampamento e ponto de encontro. É surpreendente como compartilhar um espaço comum em um acampamento cria laços instantâneos. Conhecemos pessoas de diferentes origens, idades e culturas, unidos pela paixão pela estrada. As histórias compartilhadas em torno de uma fogueira, as receitas trocadas e as risadas que ecoam sob um céu estrelado transformam estranhos em amigos e transformam uma simples parada em uma comunidade temporária.
+</p><br>
+    <p>O bem-estar que permeia essa forma de vida é palpável. A simplicidade de ter o suficiente, mas não o excesso, proporciona uma sensação de leveza e contentamento. A paz interior é cultivada não apenas pelas paisagens deslumbrantes que se desdobram através da janela, mas também pela ausência do peso das preocupações mundanas. A vida em um motorhome é um lembrete constante de que a felicidade reside na jornada, não apenas no destino, em outras palavras, "viver o presente".
+</p><br>
+    <p>E então, há o contato com a natureza, um benefício inestimável. Acordar ao som dos pássaros, sentir o cheiro da floresta ou observar o pôr do sol sobre uma praia isolada são experiências diárias. A natureza se torna a extensão do nosso lar, proporcionando-nos um ambiente em constante mudança que nutre a alma e revitaliza os sentidos.
+</p><br> 
+    <p>Em resumo, viver em um motorhome não é apenas uma escolha de moradia, mas uma filosofia de vida. É uma jornada que transcende o material, buscando riquezas nas experiências, conexões humanas e na vastidão da natureza. Neste modo de vida sobre rodas, encontrei um equilíbrio harmonioso entre liberdade, cultura, amizade, bem-estar e a serenidade que só o contato constante com a natureza pode oferecer.</p>
+
+    </div>
+
+<script type="text/javascript">
+  let bg = document.getElementById("bg");
+  let moon = document.getElementById("moon") ;
+  let mountain = document.getElementById("mountain");
+  let road = document.getElementById("road") ;
+  let text = document.getElementById("text");
+
+window.addEventListener('scroll', function(){
+var value = window.scrollY;
+
+bg.style.top = value * 0.5 + 'px';
+moon.style.left = -value * 0.65 + 'px';
+road.style.top = value * 0.15 + 'px';
+text.style.top = value * 0.6 + 'px';
+
+})
+</script>
+</body>
+</html>
